@@ -1,3 +1,6 @@
+v1.5 - December 15th, 2017
+o Added Spanish Latin translation, courtsey of [url=https://www.simplemachines.org/community/index.php?action=profile;u=322597]Rock Lee[/url]!
+
 v1.4 - December 8th, 2017
 o Added URL embedding code for the Tapatalk mod.
 

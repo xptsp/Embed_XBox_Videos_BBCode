@@ -5,13 +5,14 @@
 	<id>Dougiefresh:XBoxVideos</id>
 	<name>Embed XBox Videos BBCode</name>
 	<type>modification</type>
-	<version>1.4</version>
+	<version>1.5</version>
 
 	<install for="2.0 - 2.0.99">
 		<readme parsebbc="true">readme.txt</readme>
 		<code>add_remove_hooks.php</code>
 		<modification>install.xml</modification>
 		<modification>language_english.xml</modification>
+		<modification>language_spanish_latin.xml</modification>
 		<require-file name="Subs-BBCode-XBox.php" destination="$sourcedir" />
 		<require-file name="BBCode-XBox.css" destination="$themedir/css" />
 		<require-file name="xbox_clips.gif" destination="$imagesdir/bbc" />
@@ -21,6 +22,7 @@
 		<code>add_remove_hooks.php</code>
 		<modification reverse="true">install.xml</modification>
 		<modification reverse="true">language_english.xml</modification>
+		<modification reverse="true">language_spanish_latin.xml</modification>
 		<remove-file name="$sourcedir/Subs-BBCode-XBox.php" />		
 		<remove-file name="$themedir/css/BBCode-XBox.css" />
 		<remove-file name="$imagesdir/bbc/xbox_clips.gif" />
@@ -31,6 +33,7 @@
 		<readme parsebbc="true">readme.txt</readme>
 		<code>add_remove_hooks.php</code>
 		<modification>language_english.xml</modification>
+		<modification>language_spanish_latin.xml</modification>
 		<require-file name="Subs-BBCode-XBox.php" destination="$sourcedir" />
 		<require-file name="BBCode-XBox.css" destination="$themedir/css" />
 		<require-file name="xbox_clips.png" destination="$imagesdir/bbc" />
@@ -39,6 +42,7 @@
 	<uninstall for="2.1 Beta 2">
 		<code>add_remove_hooks.php</code>
 		<modification reverse="true">language_english.xml</modification>
+		<modification reverse="true">language_spanish_latin.xml</modification>
 		<remove-file name="$sourcedir/Subs-BBCode-XBox.php" />		
 		<remove-file name="$themedir/css/BBCode-XBox.css" />
 		<remove-file name="$imagesdir/bbc/xbox_clips.png" />
