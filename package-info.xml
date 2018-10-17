@@ -5,7 +5,7 @@
 	<id>Dougiefresh:XBoxVideos</id>
 	<name>Embed XBox Videos BBCode</name>
 	<type>modification</type>
-	<version>1.0</version>
+	<version>1.0.1</version>
 
 	<install for="2.0 - 2.0.99">
 		<readme parsebbc="true">readme.txt</readme>

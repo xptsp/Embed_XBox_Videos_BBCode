@@ -96,9 +96,9 @@ function BBCode_XBoxDVR_Validate(&$tag, &$data, &$disabled)
 	if (empty($data))
 		return ($tag['content'] = $txt['XBox_no_post_id']);
 	$data = strtr(trim($data), array('<br />' => ''));
-	if (strpos($data, 'http://') !== 0 && strpos($data, 'https://') !== 0)
+	if (strpos($data, 'http://') !== 0 && strpos($data, 'https:\/\/') !== 0)
 		$data = 'http://' . $data;
-	$pattern = '#(http|https)://(|(.+?).)xboxdvr\.com/gamer/([\w\_]+)/video/(\d+)#i';
+	$pattern = '#(http|https):\/\/(|(.+?).)xboxdvr\.com/gamer/([\w\_]+)/video/(\d+)#i';
 	if (!preg_match($pattern, $data, $parts))
 		return ($tag['content'] = $txt['XBox_no_post_id']);
 	list($width, $height, $frameborder) = explode('|', $tag['content']);
@@ -117,9 +117,9 @@ function BBCode_XBoxClips_Validate(&$tag, &$data, &$disabled)
 	if (empty($data))
 		return ($tag['content'] = $txt['XBox_no_post_id']);
 	$data = strtr(trim($data), array('<br />' => ''));
-	if (strpos($data, 'http://') !== 0 && strpos($data, 'https://') !== 0)
+	if (strpos($data, 'http://') !== 0 && strpos($data, 'https:\/\/') !== 0)
 		$data = 'http://' . $data;
-	$pattern = '#(http|https)://(|(.+?).)xboxclips\.com/([\w\+\-\_\+]+)/([0-9]|[a-f]|[A-F]|\-){36}#i';
+	$pattern = '#(http|https):\/\/(|(.+?).)xboxclips\.com\/([\w\+\-\_]+)\/([0-9a-fA-F\-]{36})#i';
 	if (!preg_match($pattern, $data, $parts))
 		return ($tag['content'] = $txt['XBox_no_post_id']);
 	$frame = $tag['content'];
@@ -143,9 +143,9 @@ function BBCode_XBox_Settings(&$config_vars)
 
 function BBCode_XBox_Embed(&$message, &$smileys, &$cache_id, &$parse_tags)
 {
-	$pattern = '~(?<=[\s>\.(;\'"]|^)(http|https)://(|(.+?).)xboxdvr\.com/gamer\/([\w\_]+)\/video\/(\d+)\??[/\w\-_\~%@\?;=#}\\\\]?~';
+	$pattern = '~(?<=[\s>\.(;\'"]|^)(http|https):\/\/(|([\w]+)\.)xboxdvr\.com/gamer\/([\w\_]+)\/video\/(\d+)\??[/\w\-_\~%@\?;=#}\\\\]?~';
 	$message = preg_replace($pattern, '[xboxdvr]$0[/xboxdvr]', $message);
-	$pattern = '~(?<=[\s>\.(;\'"]|^)(http|https)://(|(.+?).)xboxclips\.com/([\w\+\-\_\+]+)/([0-9]|[a-f]|[A-F]|\-){36}\??[/\w\-_\~%@\?;=#}\\\\]?~';
+	$pattern = '~(?<=[\s>\.(;\'"]|^)(http|https):\/\/(|(.+?)\.)xboxclips\.com\/([\w\+\-\_]+)\/([0-9a-fA-F\-]{36})\??[/\w\-_\~%@\?;=#}\\\\]?~';
 	$message = preg_replace($pattern, '[xboxclips]$0[/xboxclips]', $message);
 }
 

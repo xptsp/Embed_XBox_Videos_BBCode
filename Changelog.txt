@@ -1,11 +1,5 @@
-v1.2 - December 30th, 2015
-o Added missing semicolon in Sources/Subs.php to prevent forum crash.
-o Fixed missing language strings in Modification Settings area.
-o Fixed code responsible for setting maximum video width/height for video playing.
+v1.0.1 - February 11th, 2016
+o Fixed the regular expressions so that auto-embed and validation functions work correctly.
 
-v1.1 - November 30th, 2015
-o Corrected auto-embed code so that URLs not surrounded by tags are converted to Vine tags.
-o Modified existing auto-embed capability as hook for SMF 2.1
-
-v1.0 - September 7th, 2015
-o Initial Public Release
+v1.0 - January 6th, 2016
+o Initial Release to the public
