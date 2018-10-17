@@ -1,3 +1,6 @@
+v1.6 - March 4th, 2018
+o Fixed an issue that prevents BBC manager from showing bbcodes.
+
 v1.5 - December 15th, 2017
 o Added Spanish Latin translation, courtsey of [url=https://www.simplemachines.org/community/index.php?action=profile;u=322597]Rock Lee[/url]!
 

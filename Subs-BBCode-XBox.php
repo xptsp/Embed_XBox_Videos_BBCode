@@ -143,6 +143,9 @@ function BBCode_XBox_Settings(&$config_vars)
 
 function BBCode_XBox_Embed(&$message, &$smileys, &$cache_id, &$parse_tags)
 {
+	if ($message === false)
+		return;
+
 	$replace = (strpos($cache_id, 'sig') !== false ? '[url]$0[/url]' : '[xboxdvr]$0[/xboxdvr]');
 	$pattern = '~(?<=[\s>\.(;\'"]|^)(http|https):\/\/(|([\w]+)\.)xboxdvr\.com/gamer\/([\w\_]+)\/video\/(\d+)\??[/\w\-_\~%@\?;=#}\\\\]?~';
 	$message = preg_replace($pattern, $replace, $message);
