@@ -1,3 +1,6 @@
+v1.3 - July 16th, 2017
+o Added ability for user to full-screen the video.
+
 v1.2 - September 9th, 2016
 o SMF 2.0.x: Replaced [b]xbox.gif[/b] with [b]xbox_clips.gif[/b] and [b]xbox_dvr.gif[/b].
 o SMF 2.1: Replaced [b]xbox.gif[/b] with [b]xbox_clips.png[/b] and [b]xbox_dvr.png[/b].

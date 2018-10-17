@@ -107,7 +107,7 @@ function BBCode_XBoxDVR_Validate(&$tag, &$data, &$disabled)
 	if (empty($height) && !empty($modSettings['XBox_default_height']))
 		$height = $modSettings['XBox_default_height'];
 	$tag['content'] = '<div style="' . (empty($width) ? '' : 'max-width: ' . $width . 'px;') . (empty($height) ? '' : 'max-height: ' . $height . 'px;') . '"><div class="xbox-wrapper">' .
-		'<iframe src="' . $data .'/embed" scrolling="no" frameborder="' . $frameborder . '"></iframe></div></div>';
+		'<iframe src="' . $data .'/embed" scrolling="no" frameborder="' . $frameborder . '" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>';
 }
 
 function BBCode_XBoxClips_Validate(&$tag, &$data, &$disabled)
@@ -124,7 +124,7 @@ function BBCode_XBoxClips_Validate(&$tag, &$data, &$disabled)
 		return ($tag['content'] = $txt['XBox_no_post_id']);
 	$frame = $tag['content'];
 	$tag['content'] = '<div style="width: 570px; height: 345px;"><div class="xbox-wrapper">' .
-		'<iframe src="' . $data .'/embed" scrolling="no" frameborder="' . $frame . '"></iframe></div></div>';
+		'<iframe src="' . $data .'/embed" scrolling="no" frameborder="' . $frame . '"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>';
 }
 
 function BBCode_XBox_LoadTheme()
