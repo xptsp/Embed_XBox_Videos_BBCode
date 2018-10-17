@@ -1,3 +1,8 @@
+v1.2 - September 9th, 2016
+o SMF 2.0.x: Replaced [b]xbox.gif[/b] with [b]xbox_clips.gif[/b] and [b]xbox_dvr.gif[/b].
+o SMF 2.1: Replaced [b]xbox.gif[/b] with [b]xbox_clips.png[/b] and [b]xbox_dvr.png[/b].
+o Changed code to use the new images supplied by [url=http://www.simplemachines.org/community/index.php?action=profile;u=426316]Minecraft Manager[/url].
+
 v1.1 - March 7th, 2016
 o Modified auto-embed code so that XBoxDVR URLs in signature are embedded as [b][nobbc][url]{link}[/url][/nobbc][/b].
 o Modified auto-embed code so that XBoxClips URLs in signature are embedded as [b][nobbc][url]{link}[/url][/nobbc][/b].

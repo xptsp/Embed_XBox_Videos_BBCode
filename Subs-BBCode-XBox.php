@@ -74,14 +74,14 @@ function BBCode_XBox(&$bbc)
 function BBCode_XBox_Button(&$buttons)
 {
 	$buttons[count($buttons) - 1][] = array(
-		'image' => 'xbox',
+		'image' => 'xbox_dvr',
 		'code' => 'xboxdvr',
 		'description' => 'xboxdvr',
 		'before' => '[xboxdvr]',
 		'after' => '[/xboxdvr]',
 	);
 	$buttons[count($buttons) - 1][] = array(
-		'image' => 'xbox',
+		'image' => 'xbox_clips',
 		'code' => 'xboxclips',
 		'description' => 'xboxclips',
 		'before' => '[xboxclips]',
