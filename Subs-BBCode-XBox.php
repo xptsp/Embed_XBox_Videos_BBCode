@@ -143,10 +143,19 @@ function BBCode_XBox_Settings(&$config_vars)
 
 function BBCode_XBox_Embed(&$message, &$smileys, &$cache_id, &$parse_tags)
 {
+	$replace = (strpos($cache_id, 'sig') !== false ? '[url]$0[/url]' : '[xboxdvr]$0[/xboxdvr]');
 	$pattern = '~(?<=[\s>\.(;\'"]|^)(http|https):\/\/(|([\w]+)\.)xboxdvr\.com/gamer\/([\w\_]+)\/video\/(\d+)\??[/\w\-_\~%@\?;=#}\\\\]?~';
-	$message = preg_replace($pattern, '[xboxdvr]$0[/xboxdvr]', $message);
+	$message = preg_replace($pattern, $replace, $message);
+
+	$replace = (strpos($cache_id, 'sig') !== false ? '[url]$0[/url]' : '[xboxclips]$0[/xboxclips]');
 	$pattern = '~(?<=[\s>\.(;\'"]|^)(http|https):\/\/(|(.+?)\.)xboxclips\.com\/([\w\+\-\_]+)\/([0-9a-fA-F\-]{36})\??[/\w\-_\~%@\?;=#}\\\\]?~';
-	$message = preg_replace($pattern, '[xboxclips]$0[/xboxclips]', $message);
+	$message = preg_replace($pattern, $replace, $message);
+
+	if (strpos($cache_id, 'sig') !== false)
+	{
+		$message = preg_replace('#\[xboxdvr.*\](.*)\[\/xboxdvr\]#i', '[url]$1[/url]', $message);
+		$message = preg_replace('#\[xboxclips.*\](.*)\[\/xboxclips\]#i', '[url]$1[/url]', $message);
+	}
 }
 
 ?>

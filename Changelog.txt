@@ -1,3 +1,7 @@
+v1.1 - March 7th, 2016
+o Modified auto-embed code so that XBoxDVR URLs in signature are embedded as [b][nobbc][url]{link}[/url][/nobbc][/b].
+o Modified auto-embed code so that XBoxClips URLs in signature are embedded as [b][nobbc][url]{link}[/url][/nobbc][/b].
+
 v1.0.1 - February 11th, 2016
 o Fixed the regular expressions so that auto-embed and validation functions work correctly.
 
