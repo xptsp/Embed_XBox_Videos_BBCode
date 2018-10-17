@@ -1,3 +1,7 @@
+v1.7 - October 17th, 2018
+o No functionality change.
+o Updated documentation to point to new website.
+
 v1.6 - March 4th, 2018
 o Fixed an issue that prevents BBC manager from showing bbcodes.
 

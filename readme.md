@@ -1,35 +1,38 @@
-[hr]
-[center][color=red][size=16pt][b]EMBED XBOX VIDEO BBCODE v1.7[/b][/size][/color]
-[url=http://www.simplemachines.org/community/index.php?action=profile;u=253913][b]By Dougiefresh[/b][/url] -> [url=http://custom.simplemachines.org/mods/index.php?mod=4079]Link to Mod[/url]
-[/center]
-[hr]
+--------
 
-[color=blue][b][size=12pt][u]Introduction[/u][/size][/b][/color]
-This modification adds a BBCode to view clips from [b][nobbc]XBoxClips.com[/nobbc][/b] and [b][nobbc]XBoxDVR.com[/nobbc][/b] videos and pictures.
+# EMBED XBOX VIDEO BBCODE v1.7
+
+[**By Dougiefresh**](http://www.simplemachines.org/community/index.php?action=profile;u=253913) -> [Link to Mod](http://custom.simplemachines.org/mods/index.php?mod=4079)
+
+--------
+
+## Introduction
+This modification adds a BBCode to view clips from **[nobbc]XBoxClips.com[/nobbc]** and **[nobbc]XBoxDVR.com[/nobbc]** videos and pictures.
 
 The BBCodes takes these forms:
-[code]
-[xboxdvr]{xboxdvr URL}[/xboxdvr]
-[xboxdvr width=x height=x]{xboxdvr URL}[/xboxdvr]
-[xboxclips]{xboxclips URL}[/xboxclips]
-[xboxclips width=x height=x]{xboxclips URL}[/xboxclips]
-[/code]
+    
+    [xboxdvr]{xboxdvr URL}[/xboxdvr]
+    [xboxdvr width=x height=x]{xboxdvr URL}[/xboxdvr]
+    [xboxclips]{xboxclips URL}[/xboxclips]
+    [xboxclips width=x height=x]{xboxclips URL}[/xboxclips]
+    
 
-[color=blue][b][size=12pt][u]Admin Settings[/u][/size][/b][/color]
-There are two new settings on the [b]Modifications Settings[/b] page:
-o XBox default width
-o XBox default height
+## Admin Settings
+There are two new settings on the **Modifications Settings** page:
+- XBox default width
+- XBox default height
 
-[color=blue][b][size=12pt][u]Compatibility Notes[/u][/size][/b][/color]
+## Compatibility Notes
 This mod was tested on SMF 2.0.11, but should work on SMF 2.1 Beta 2, as well as SMF 2.0 and up.  SMF 1.x is not and will not be supported.
 
-This mod should be installed after [url=https://www.tapatalk.com/download_SimpleMachines.php]Tapatalk mod[/url], if you want to use it with Tapatalk.
+This mod should be installed after [Tapatalk mod](https://www.tapatalk.com/download_SimpleMachines.php), if you want to use it with Tapatalk.
 
-[color=blue][b][size=12pt][u]Changelog[/u][/size][/b][/color]
-The changelog can be viewed at [url=http://www.xptsp.com/board/free-modifications/embed-xbox-videos-bbcode/?tab=1]XPtsp.com[/url].
+## Changelog
+The changelog can be viewed at [XPtsp.com](http://www.xptsp.com/board/free-modifications/embed-xbox-videos-bbcode/?tab=1).
 
-[color=blue][b][size=12pt][u]License[/u][/size][/b][/color]
+## License
 Copyright (c) 2016 - 2018, Douglas Orend
+
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
