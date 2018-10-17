@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+<id>Dougiefresh:XBoxVideos</id>
+<name>Embed XBox Videos BBCode</name>
+<version>1.0</version>
+	
+<file name="$languagedir/index.english.php">
+	<operation>
+		<search position="end" />
+		<add><![CDATA[
+$txt['XBox_no_post_id'] = 'No XBox post ID supplied.';
+$txt['XBox_default_width'] = 'Default width used for XBox bbcode when not specified<div class="smalltext">Use <strong>0</strong> to use responsive video display</div>';
+$txt['XBox_default_height'] = 'Default height used for XBox bbcode when not specified<div class="smalltext">Use <strong>0</strong> to use responsive video display</div>';
+]]></add>
+	</operation>
+</file>
+</modification>
